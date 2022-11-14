@@ -888,7 +888,7 @@
     if (filterBtn) filterBtn.addEventListener("click", (e => {
         filter.classList.toggle("_active");
         sd.classList.toggle("_active");
-        bodyLockToggle(0);
+        if (!document.querySelector("html").classList.contains("menu-open")) bodyLockToggle(0);
     }));
     isWebp();
     menuInit();

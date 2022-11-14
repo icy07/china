@@ -568,12 +568,12 @@ h6 {
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 120em) {
+@media (min-width: 28.1875em) and (min-width: 120em) {
   .article__download-section {
     padding-left: 1.5625rem;
   }
 }
-@media (min-width: 20em) and (max-width: 120em) {
+@media (min-width: 28.1875em) and (min-width: 20em) and (max-width: 120em) {
   @supports (padding-left: clamp( 0.625rem , 0.4375rem  +  0.9375vw , 1.5625rem )) {
     .article__download-section {
       padding-left: clamp( 0.625rem , 0.4375rem  +  0.9375vw , 1.5625rem );
@@ -585,17 +585,17 @@ h6 {
     }
   }
 }
-@media (max-width: 20em) {
+@media (min-width: 28.1875em) and (max-width: 20em) {
   .article__download-section {
     padding-left: 0.625rem;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 28.1875em) and (min-width: 120em) {
   .article__download-section {
     padding-right: 1.5625rem;
   }
 }
-@media (min-width: 20em) and (max-width: 120em) {
+@media (min-width: 28.1875em) and (min-width: 20em) and (max-width: 120em) {
   @supports (padding-right: clamp( 0.625rem , 0.4375rem  +  0.9375vw , 1.5625rem )) {
     .article__download-section {
       padding-right: clamp( 0.625rem , 0.4375rem  +  0.9375vw , 1.5625rem );
@@ -607,7 +607,7 @@ h6 {
     }
   }
 }
-@media (max-width: 20em) {
+@media (min-width: 28.1875em) and (max-width: 20em) {
   .article__download-section {
     padding-right: 0.625rem;
   }
@@ -615,11 +615,6 @@ h6 {
 @media (max-width: 53.125em) {
   .article__download-section {
     justify-content: flex-start;
-  }
-}
-@media (max-width: 28.125em) {
-  .article__download-section {
-    padding: 0px;
   }
 }
 .article__title {
@@ -973,7 +968,8 @@ h6 {
 }
 @media (max-width: 25em) {
   .header__logo-block {
-    display: none;
+    max-width: 5rem;
+    padding-right: 0;
   }
 }
 .header__main {
@@ -1057,6 +1053,11 @@ h6 {
 @media (max-width: 20em) {
   .header__lang {
     margin-left: 1.875rem;
+  }
+}
+@media (max-width: 25em) {
+  .header__lang {
+    margin-left: 0.625rem;
   }
 }
 .header__lang-btn {
@@ -1268,9 +1269,11 @@ h6 {
     height: 100%;
     top: 0;
     left: 0;
+    opacity: 0;
   }
   .menu-open .menu__body {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
