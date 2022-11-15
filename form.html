@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Электронная форма подачи заявления</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221115210620">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="mobile-menu">
+			<div class="mobile-menu__filter-wrapper">
+			</div>
+			<div class="mobile-menu__main">
+				<button class="mobile-menu__filter _icon-sort"></button>
+				<div class="mobile-menu__search-block"></div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo-block">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture>
+				</a>
+				<div class="header__main">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+
+						</nav>
+					</div>
+					<div class="header__top">
+						<div class="header__socials">
+							<a href="#" class="header__soc-link">
+								<img src="img/icons/vk.svg" alt="VK">
+							</a>
+							<a href="#" class="header__soc-link">
+								<img src="img/icons/tg.svg" alt="Telegram">
+							</a>
+						</div>
+						<div class="header__lang">
+							<button class="header__lang-btn _active">RU</button>
+							<span class="header__lang-line">|</span>
+							<button class="header__lang-btn">EN</button>
+						</div>
+					</div>
+					<div class="header__middle" data-da=".mobile-menu__filter-wrapper, 600">
+						<button class="header__sort-btn header__sort-btn--issue red-btn">
+							<span>Сортировка по выпускам</span>
+							<div class="header__sort-arrows">
+								<i class="_icon-long-arrow header__sort-arrow-1 _active"></i>
+								<i class="_icon-long-arrow header__sort-arrow-2"></i>
+							</div>
+						</button>
+						<button class="header__sort-btn header__sort-btn--authors red-btn">
+							<span>Сортировка по авторам</span>
+							<div class="header__sort-letters">
+								<p class="header__sort-letter header__sort-letter--a">А</p>
+								<p class="header__sort-dash">-</p>
+								<p class="header__sort-letter header__sort-letter--z">Я</p>
+							</div>
+						</button>
+						<div class="header__select-wrapper" data-da=".header__bottom, 750, last">
+							<select name="langs" class="header__select">
+								<option value="Русский" selected>Русский</option>
+								<option value="Английский">Английский</option>
+								<option value="Французский">Французский</option>
+								<option value="Немецкий">Немецкий</option>
+							</select>
+						</div>
+					</div>
+					<div class="header__bottom" data-da=".mobile-menu__filter-wrapper, 600">
+						<div class="header__keywords-wrapper">
+							<select name="keywords" class="sel-keywords">
+								<option value="" selected>Ключевые слова</option>
+								<option value="1">генеалогическая классификация индоевропейской языковой семьи</option>
+								<option value="2">генетика населения Европы</option>
+								<option value="3">генетическая классификация языков</option>
+								<option value="4">генетическое родство языков</option>
+								<option value="5">генофонд</option>
+							</select>
+						</div>
+						<form class="header__search-form" action="#" data-da=".mobile-menu__search-block, 750">
+							<input autocomplete="off" type="text" name="search" data-error data-required placeholder="Поиск по заголовку" class="header__search-input input">
+							<button type="submit" class="header__search-btn red-btn">ОК</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main__container">
+				<aside class="aside" data-da=".menu__body, 600">
+					<nav class="aside__block">
+						<ul class="aside__ul-nav">
+							<li class="aside__li-nav _active"><a href="#">О журнале</a></li>
+							<li class="aside__li-nav"><a href="#">Подписка</a></li>
+							<li class="aside__li-nav"><a href="#">Редсовет</a></li>
+							<li class="aside__li-nav"><a href="#">Меморандум</a></li>
+							<li class="aside__li-nav"><a href="#">Подача статей</a></li>
+							<li class="aside__li-nav"><a href="#">Кодекс этики</a></li>
+							<li class="aside__li-nav"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="aside__block" data-spollers>
+						<div class="aside__spoiler-item">
+							<button type="button" data-spoller class="aside__spoiler-title _icon-arrow _spoller-active">выпуски</button>
+							<div class="aside__spoiler-body">
+								<div class="aside__year">
+									<p class="aside__year-text">
+										2023
+									</p>
+									<div class="aside__year-nums">
+										<a href="#" class="aside__year-num">7</a>
+										<a href="#" class="aside__year-num">6</a>
+										<a href="#" class="aside__year-num">5</a>
+										<a href="#" class="aside__year-num">4</a>
+										<a href="#" class="aside__year-num">7</a>
+										<a href="#" class="aside__year-num">6</a>
+										<a href="#" class="aside__year-num">5</a>
+										<a href="#" class="aside__year-num">4</a>
+										<a href="#" class="aside__year-num">7</a>
+										<a href="#" class="aside__year-num">6</a>
+										<a href="#" class="aside__year-num">5</a>
+										<a href="#" class="aside__year-num">4</a>
+										<a href="#" class="aside__year-num">7</a>
+										<a href="#" class="aside__year-num">6</a>
+										<a href="#" class="aside__year-num">5</a>
+										<a href="#" class="aside__year-num">4</a>
+									</div>
+								</div>
+								<div class="aside__year">
+									<p class="aside__year-text">
+										2022
+									</p>
+									<div class="aside__year-nums">
+										<a href="#" class="aside__year-num">3</a>
+										<a href="#" class="aside__year-num">2</a>
+										<a href="#" class="aside__year-num">1</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__block" data-spollers>
+						<div class="aside__spoiler-item">
+							<button type="button" data-spoller class="aside__spoiler-title _icon-arrow _spoller-active">авторы</button>
+							<div class="aside__spoiler-body">
+								<ul class="aside__authorts-list">
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Адиего Игнази-Шабьер
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айкио Анте
+											</span>
+											<span class="aside__author-num">
+												10
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айхнер Хайнер
+											</span>
+											<span class="aside__author-num">
+												6
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алвес Марк
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алексеев М. Е.
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Адиего Игнази-Шабьер
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айкио Анте
+											</span>
+											<span class="aside__author-num">
+												10
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айхнер Хайнер
+											</span>
+											<span class="aside__author-num">
+												6
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алвес Марк
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алексеев М. Е.
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Адиего Игнази-Шабьер
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айкио Анте
+											</span>
+											<span class="aside__author-num">
+												10
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Айхнер Хайнер
+											</span>
+											<span class="aside__author-num">
+												6
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алвес Марк
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+									<li class="aside__author">
+										<a href="#" class="aside__author-link">
+											<span class="aside__author-name">
+												Алексеев М. Е.
+											</span>
+											<span class="aside__author-num">
+												1
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<main class="page">
+					<div class="text-block">
+						<h1 class="text-block__title title">
+							Электронная форма подачи заявления
+						</h1>
+						<div class="text-block__main">
+							<div class="text-block__text">
+								<p>
+									Рукописи, подаваемые для публикации в Журнале, следует загружать на сайт Журнала через
+									<a href="form.html">электронную форму</a> (см. ниже
+									ссылку). В случае технических неполадок или для надежности можно также отослать рукопись
+									(включая все сопровождающие
+									материалы, информацию об авторах, резюме и ключевые слова) на обычный электронный адрес
+									Журнала и/или непосредственно
+									заместителю главного редактора.
+								</p>
+								<p>
+									Статья должна быть в обязательном порядке представлена в формате MS Word (*.doc или *.rtf), а
+									также в варианте PDF
+									(анонимизированном, т. е. не содержащем указаний на имя автора, чтобы качественно обеспечить
+									процесс двойного анонимного
+									рецензирования).
+								</p>
+							</div>
+						</div>
+						<form action="#" class="text-block__form form">
+							<div class="form__row">
+								<p class="form__title">
+									Заголовок с описанием
+								</p>
+								<div class="form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error="Текст ошибки" data-required placeholder="" class="form__input input">
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Paper
+								</p>
+								<div class="form__inputs-block form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error="Текст ошибки" data-required placeholder="" class="form__input input">
+									<div class="form__options options">
+										<label class="options__label">
+											<input hidden class="options__input" checked type="radio" value="Article" name="option">
+											<span class="options__text">Article</span>
+										</label>
+										<label class="options__label">
+											<input hidden class="options__input" type="radio" value="Review" name="option">
+											<span class="options__text">Review</span>
+										</label>
+										<label class="options__label">
+											<input hidden class="options__input" type="radio" value="Chronicle" name="option">
+											<span class="options__text">Chronicle</span>
+										</label>
+										<label class="options__label">
+											<input hidden class="options__input" type="radio" value="Other" name="option">
+											<span class="options__text">Other</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Title
+								</p>
+								<div class="form__inp-row">
+									<textarea autocomplete="off" name="form" placeholder="" data-required data-error="Текст ошибки" class="form__ta input textarea"></textarea>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Summary
+									<span>(within 100 words)</span>
+								</p>
+								<div class="form__inp-row">
+									<textarea autocomplete="off" name="form" placeholder="" data-required data-error="Текст ошибки" class="form__ta input textarea"></textarea>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Keywords
+								</p>
+								<div class="form__inp-row">
+									<textarea autocomplete="off" name="form" placeholder="" data-required data-error="Текст ошибки" class="form__ta input textarea"></textarea>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Author(s):
+									<span>name, institution, position</span>
+								</p>
+								<div class="form__inp-row">
+									<textarea autocomplete="off" name="form" placeholder="" data-required data-error="Текст ошибки" class="form__ta input textarea"></textarea>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Telephone
+								</p>
+								<div class="form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error="Текст ошибки" data-required placeholder="" class="form__input input">
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Email
+								</p>
+								<div class="form__inp-row">
+									<input autocomplete="off" type="email" name="form" data-error="Текст ошибки" data-required placeholder="" class="form__input input">
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									PDF file
+								</p>
+								<div class="form__file-block form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error data-required placeholder="" class="form__input input">
+									<label class="form__file-label">
+										<input autocomplete="off" type="file" id="inputFile" name="request" data-required="" class="form__file-input input--file" multiple="">
+										<span class="form__file-btn red-btn">
+											Выберите файл
+										</span>
+									</label>
+									<span class="form__file-span">Файл не выбран</span>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									DOC file
+								</p>
+								<div class="form__file-block form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error data-required placeholder="" class="form__input input">
+									<label class="form__file-label">
+										<input autocomplete="off" type="file" id="inputFile" name="request" data-required="" class="form__file-input input--file" multiple="">
+										<span class="form__file-btn red-btn">
+											Выберите файл
+										</span>
+									</label>
+									<span class="form__file-span">Файл не выбран</span>
+								</div>
+							</div>
+							<div class="form__row">
+								<p class="form__title">
+									Additional font file
+								</p>
+								<div class="form__file-block form__inp-row">
+									<input autocomplete="off" type="text" name="form" data-error data-required placeholder="" class="form__input input">
+									<label class="form__file-label">
+										<input autocomplete="off" type="file" id="inputFile" name="request" data-required="" class="form__file-input input--file" multiple="">
+										<span class="form__file-btn red-btn">
+											Выберите файл
+										</span>
+									</label>
+									<span class="form__file-span">Файл не выбран</span>
+								</div>
+							</div>
+							<div class="form__btn-wrapper">
+								<button type="submit" class="form__btn red-btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</main>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221115210620"></script>
+</body>
+
+</html>

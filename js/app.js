@@ -890,6 +890,16 @@
         sd.classList.toggle("_active");
         if (!document.querySelector("html").classList.contains("menu-open")) bodyLockToggle(0);
     }));
+    let fields = document.querySelectorAll(".input--file");
+    if (fields) Array.prototype.forEach.call(fields, (function(input) {
+        let label = input.closest(".form__file-block");
+        let labelVal = label.querySelector(".form__file-span").innerText;
+        input.addEventListener("change", (function(e) {
+            let countFiles = "";
+            if (this.files && this.files.length >= 1) countFiles = this.files.length;
+            if (countFiles) label.querySelector(".form__file-span").innerText = "Выбрано файлов: " + countFiles; else label.querySelector(".form__file-span").innerText = labelVal;
+        }));
+    }));
     isWebp();
     menuInit();
     spollers();
