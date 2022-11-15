@@ -1142,6 +1142,10 @@ h6 {
   align-items: center;
   overflow: hidden;
 }
+.text-block__img picture {
+  width: 100%;
+  height: 100%;
+}
 .text-block__img img {
   max-width: 100%;
   width: 100%;
